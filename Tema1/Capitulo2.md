@@ -20,5 +20,5 @@
     * ![Ejemplos](documentacion_capitulo_2/imagenes/Ejemplos.png)
     * Operaciones
     * ![Ejemplos](documentacion_capitulo_2/imagenes/Ejemplos_operaciones.png)
-    * Cambiar el valor de una variable
+    * Cambiar el valor de una variable 
     * ![Ejemplos](documentacion_capitulo_2/imagenes/Ejemplos_cambios.png)
