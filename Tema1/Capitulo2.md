@@ -6,16 +6,16 @@
   * Abrir Terminal y poner "sudo apt install idle3"
   * Poner el siguiente comando "idle"
 * **Utilización de la consola interactiva**
-  * Operaciones básicas
+  * **Operaciones básicas**
     * Suma "+"
     * Resta "-"
     * Multiplicación "*"
     * División "/"
     * ![Ejemplos basicos](documentacion_capitulo_2/imagenes/captura_ejemplo_basico_idle.png)
-  * Operaciones compuestas
+  * **Operaciones compuestas**
     * Se tratan de operanciones con más de un operando
     * ![Ejemplos](documentacion_capitulo_2/imagenes/Ejemplo.png)
-  * Operaciones con variables
+  * **Operaciones con variables**
     * Tratan de asociar números a variables
     * ![Ejemplos](documentacion_capitulo_2/imagenes/Ejemplos.png)
     * Operaciones
