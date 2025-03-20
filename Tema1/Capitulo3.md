@@ -8,7 +8,7 @@
   * **Concatenación de cadenas**
     * ![Ejemplos](documentacion_capitulo_3/imagenes/concatenacion.png)
   * **Escribir programas**
-    * Para ello de beremos dar el primer paso de darle a file, new file y guardarlo con el nombre que quieras pero con la extensión .py
+    * Para ello deberemos dar el primer paso de darle a file, new file y guardarlo con el nombre que quieras pero con la extensión .py
     * Después usaremos el siguiente codigo.
     * ![Ejemplos](documentacion_capitulo_3/imagenes/programa.png)
       * Explicación breve:
