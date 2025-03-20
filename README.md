@@ -2,4 +2,4 @@
 
 ## Lista del proyecto
 
-* **Utilización de gitignore.**
+* **Utilización de gitignore.** 
