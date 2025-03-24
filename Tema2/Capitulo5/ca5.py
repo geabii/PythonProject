@@ -1,16 +1,16 @@
-print('¿Qué sale de la cruza entre un mono y un pato?')
-input()
-print('¡Un monopatín!')
-print()
-print('¿Porqué vuelan los pájaros pa\'l sur?')
-input()
-print('¡Porque caminando tardarían muchísimo!')
-print()
-print('¿En qué se parecen una familia, un bombero y un barco?')
-input()
-print("No sé... ¿en qué se parecen?")
-input()
-print('En que el bombero y el barco tienen casco.')
-input()
-print('¿Y la familia?', end='')
-print(' -Bien, gracias.')
+# Pedir la lista de los integrantes
+integrantes = []
+while True:
+    integrante = input("Introduce el nombre del integrante, si ya no quedan más déjelo en blanco : ")
+    if integrante == "":
+        break
+    integrantes.append(integrante)
+# Hacemos la cadena de texto
+salida = "- Integrantes:\n\n"
+for integrante in integrantes:
+    salida += f"\t- {integrante}\n\n"
+
+# Imprimir la lista formateada
+print(salida)
+
+
