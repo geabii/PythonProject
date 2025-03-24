@@ -6,11 +6,13 @@ while True:
         break
     integrantes.append(integrante)
 # Hacemos la cadena de texto
-salida = "- Integrantes:\n\n"
+salida = "/#################################\\ \n\n"
+salida += "- Integrantes:\n\n"
 for integrante in integrantes:
     salida += f"\t- {integrante}\n\n"
 
+salida += "/#################################\\"
+
 # Imprimir la lista formateada
 print(salida)
-
 

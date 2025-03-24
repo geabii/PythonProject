@@ -1,3 +1,5 @@
+import math
+
 print('Elige una de las siguientes opciones del menú: \n 1 Calcular el Iva de un producto. \n 2 Calcular superficie y perímetro de un círculo. \n 3 Lista de jugadores. \n 4 Solucionar ecuación de segundo grado. \n 5 Calcular perímetro y área de un cuadrado.')
 opcion = int(input('Selecciona la opción: '))
 if opcion == 1:
@@ -72,7 +74,27 @@ elif opcion == 3:
     print(salida)
 
 elif opcion == 4:
-    a
+
+    a = float(input('Introduzca el primer dato de su ecuación '))
+    b = float(input('Introduzca el segundo dato de su ecuación '))
+    c = float(input('Introduzca el tercer dato de su ecuación '))
+
+    # vamos a ver que signo debemos usar en la ecuación si + o -
+
+    signo = b ** 2 - 4 * a * c
+
+    # Evaluar soluciones
+    if signo > 0:
+        x1 = (-b + math.sqrt(signo)) / (2 * a)
+        x2 = (-b - math.sqrt(signo)) / (2 * a)
+        print(f"Las soluciones son: x1 = {x1}, x2 = {x2}")
+    elif signo == 0:
+        x = -b / (2 * a)
+        print(f"La única solución es: x = {x}")
+    else:
+        print("No hay soluciones reales.")
+
+
 elif opcion == 5:
     lado = float(input('Introduzca un lado del cuadrado en cm: '))
     peri =  lado * 4
