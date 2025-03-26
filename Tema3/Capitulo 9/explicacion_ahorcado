@@ -1,0 +1,22 @@
+1: Importamos random que lo usaremos más tarde
+3-14: Lista de palabras dentro de la variable "palabras"
+18-19: Función para hacer una elección random de la lista de palabras y que lo ponga en minúscula
+22-23: Función para sustituir todas las letras por guiones bajos
+26-77: Lista de dibujos del ahorcado
+78: Le indicamos el dibujo que tiene que coger
+81-85: Función para coger la palabra aleatoria, poner que el usuario tiene 6 intentos
+87-90: Mientras que los intentos sean más que 0, pondremos el dibujo que le corresponde según los intentos restantes,
+le mostraremos la palabra con los huecos y las letras adivinadas y le enseñaremos el número de intentos restantes.
+92: Invitamos al jugador a que siga adivinando letras o la palabra entera
+94-108: Si pusimos una sola letra y esta ya está dentro de las letras introducidas(letras_adivinadas) anteriormente se lo diremos al usuario,
+si el intento está dentro de la palabra entonces el usuario habrá adivinado una letra de la palabra,
+si no está dentro entonces el usuario se habrá equivocado y la letra no está dentro de la palabra,
+sin embargo si el intento y literalmente igual que la palabra el usuario habrá ganado el juego,
+por lo contrario le quitaremos un intento al usuario y se lo diremos.
+110-112: Si ya pusimos letra a letra la palabra el usuario también habrá ganado el juego y se acabará el juego
+113-115: Si el usuario llego al dibujo el cual tiene el mismo número de intentos entonces este habrá perdido
+117-120: Le preguntamos que si quiere volver a jugar, en el caso en el que este ponga una s, el juego volverá a ejecutarse,
+en cualquier otro caso el juego se terminará
+123-124: En Python, cada archivo (script) ejecutado tiene una variable especial llamada __name__.
+Si el archivo se está ejecutando directamente (es decir, no se está importando como un módulo en otro script), entonces __name__ tomará el valor "__main__".
+Si el archivo se importa en otro script, __name__ tomará el nombre del archivo sin la extensión .py.
