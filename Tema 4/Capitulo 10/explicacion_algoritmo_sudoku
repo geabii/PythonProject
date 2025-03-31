@@ -41,6 +41,13 @@ Después vamos a empezar con la primera función(sudoku):
         Tercera fila usaremos la misma lógica, 1:3 cogeremos la segunda y la tercera pero no la cuarta ya que si está a la derecha de ":" no se incluirá y así con los demás.
         Cuarta fila aplicamos la misma lógica.
 
+        *CAMBIO EN EL CÓDIGO*
+        Ahora lo hice cogiendo posiciones una por una para asegurarme que no se repitan tal que así:
+            1234
+            2341
+            3412
+            4123
+
 Devolvemos las filas.
 Hacemos la función que será la encargada de imprimir el juego.
     Le decimos que para cada fila recorra(enumerate) la variable juego_sudoku

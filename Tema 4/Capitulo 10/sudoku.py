@@ -5,10 +5,10 @@ def sudoku():
     random.shuffle(numeros) 
     
     filas = [
-        numeros[:],
-        numeros[2:] + numeros[:2],
-        numeros[1:3] + numeros[0:1] + numeros[3:],
-        numeros[3:] + numeros[:3]
+        numeros[0] + numeros[1] + numeros[2] + numeros[3],
+        numeros[1] + numeros[2] + numeros[3] + numeros[0],
+        numeros[2] + numeros[3] + numeros[0] + numeros[1],
+        numeros[3] + numeros[0] + numeros[1] + numeros[2]
     ]
     
     return filas
