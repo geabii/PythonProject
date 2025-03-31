@@ -1,0 +1,23 @@
+Línea 3. Función con listas de preguntas entre "comillas", preguntas de respuesta
+múltiple con pregunta entre "comillas",
+posibles respuestas entre [corchetes] , "comillas" y la posición de la respuesta,
+en este caso va desde la 0 que sería la 1 hasta la 3 que sería la cuatro
+
+Línea 33. Función jugar con las siguientes cosas:
+    - Iniciamos la variable puntaje a 0
+    - Abrimos un for que se ejecutará 5 veces (range(5))
+    - le indicamos que la variale preg será igual que la función pregunta
+    - Se verifica si preg[1] es una lista, es decir, si se hace la pregunta
+    y después contiene una lista.
+    - Se muestra el texto de la pregunta.
+    - Se recorren las opciones de respuesta y se muestran en pantalla
+    con un índice (1, 2, 3, 4 en lugar de 0, 1, 2, 3).
+    - Se pide el usuario que ponga una opción del 1 al 4 pero le restamos uno
+    porque nosotros lo tenemos que tener del 0 al 3.
+    - Si elige la opción correcta se le suma un punto al puntaje, al contrario
+    se le mostrará un mensaje que le ponga que es Incorrecto
+    - Si no es una pregunta de opción múltiple mostraremos la pregunta.
+    - Le pediremos al usuario que introduzca su respuesta.
+    - Si esta es correcta le sumaremos un punto al puntaje y sino pondremos
+    que es incorrecto, por último le diremos al usuario que el juego ha
+     terminado y le mostraremos su puntaje sobre 5.
