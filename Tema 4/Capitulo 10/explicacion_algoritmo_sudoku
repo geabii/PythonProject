@@ -37,7 +37,7 @@ Después vamos a empezar con la primera función(sudoku):
         Ahora empezamos con la primera fila, al solo poner ":" cogeremos todos los números tal y como están mezclados.
         Otra cosa a tener en cuenta es que las posiciones en las listas se empiezan desde el 0 y no desde el 1 por lo que la posición 0 será el primer número y así sucesivamente.
         Ahora sí, segunda fila, 2: significa que cogerá los números desde la tercera posición hacía adelante incluyéndose a él mismo
-            y :2 será lo opuesto cogerá todo lo que hay hasta la tercera posición pero esta vez sin incluirse a él mismo.
+            y :2 será lo opuesto cogerá lo que hay hasta la tercera posición pero esta vez sin incluirse a él mismo.
         Tercera fila usaremos la misma lógica, 1:3 cogeremos la segunda y la tercera pero no la cuarta ya que si está a la derecha de ":" no se incluirá y así con los demás.
         Cuarta fila aplicamos la misma lógica.
 
