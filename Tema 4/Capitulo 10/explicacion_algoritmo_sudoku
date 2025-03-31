@@ -1,0 +1,51 @@
+1. import random
+2.
+3. def sudoku():
+4.    numeros = [1, 2, 3, 4]
+5.    random.shuffle(numeros)
+6.
+7.    filas = [
+8.        numeros[:],
+9.        numeros[2:] + numeros[:2],
+10.        numeros[1:3] + numeros[0:1] + numeros[3:],
+11.        numeros[3:] + numeros[:3]
+12.    ]
+13.
+14.    return filas
+15.
+16. def imprimir(juego_sudoku):
+17.    for i, fila in enumerate(juego_sudoku):
+18.        print(" ".join(map(str, fila[:2])) + " | " + " ".join(map(str, fila[2:])))
+19.        if i == 1:
+20.            print("---------")
+21.
+22. def juego():
+23.    juego_sudoku = sudoku()
+24.    imprimir(juego_sudoku)
+25.
+26. juego()
+
+
+Teniendo este código vamos a proceder a la explicación.
+
+Para empezar importamos random.
+Después vamos a empezar con la primera función(sudoku):
+    Para empezar crearemos la lista de números necesarios para nuestro sudoku, en nuestro caso será del 1 al 4
+    Luego usaremos random.shuffle para que nos mezcle(shuffle) de forma aleatoria(random) nuestra lista(numeros).
+    Después crearemos las filas, cada una con un orden diferente, el cual se lo indicaremos con el formato de los dos puntos(:):
+        Antes de nada tendremos que tener en cuenta que nuestra lista de números está desordenada por lo que si escogemos el primer y segundo número puede ser que sean 4 y 1 no tienen porque ser 3 y 4
+        Ahora empezamos con la primera fila, al solo poner ":" cogeremos todos los números tal y como están mezclados.
+        Otra cosa a tener en cuenta es que las posiciones en las listas se empiezan desde el 0 y no desde el 1 por lo que la posición 0 será el primer número y así sucesivamente.
+        Ahora sí, segunda fila, 2: significa que cogerá los números desde la tercera posición hacía adelante incluyéndose a él mismo
+            y :2 será lo opuesto cogerá todo lo que hay hasta la tercera posición pero esta vez sin incluirse a él mismo.
+        Tercera fila usaremos la misma lógica, 1:3 cogeremos la segunda y la tercera pero no la cuarta ya que si está a la derecha de ":" no se incluirá y así con los demás.
+        Cuarta fila aplicamos la misma lógica.
+
+Devolvemos las filas.
+Hacemos la función que será la encargada de imprimir el juego.
+    Le decimos que para cada fila recorra(enumerate) la variable juego_sudoku
+    Comenzamos a imprimir el tablero pondremos " " para que haya un espacio entre los números y le indicaremos con :2 y 2: que exactamente en esa posición que sería entre la segunda y la tercera nos imprima un línea "|".
+    Cuando vaya por la posición 1(segunda fila) de las filas nos imprima nuestra línea divisoria que en nuestro caso será con guiones "----------"
+Creamos la función del juego.
+    Le decimos que juego sudoku es igual que la función sudoku y procedemos a imprimir la función imprimir(juego_sudoku) ya que ya si saba lo que hay en sudoku.
+Por último ejecutamos la función del juego.
