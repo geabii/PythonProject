@@ -7,11 +7,11 @@ def calcular_expresion(expresion):
         expresion = expresion.replace(" ", "")
 
         # Expresión regular para ver las posibles multiplicaciones y divisiones, si es así lo mandamos a resolver_mul_div para resolverlo
-        """
+        '''
         Explicación sobre la expresión regular: \d+ coge los número enteros
                                                 \.\d+ cogerá un decimal si es que tiene alguno
                                                 recogemos el signo, ya sea de multiplicación(*) o de división(/)
-        """
+        '''
         while re.search(r'\d+(\.\d+)?[*/]-?\d+(\.\d+)?', expresion):
             expresion = re.sub(r'(\d+(\.\d+)?)([*/])(-?\d+(\.\d+)?)', resolver_mul_div, expresion)
 
