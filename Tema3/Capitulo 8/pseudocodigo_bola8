@@ -1,0 +1,39 @@
+INICIO
+
+    DEFINIR respuestas_generales COMO LISTA [
+        "Me da a mi que sí.", "Me da a mi que no.", "Puede ser que sí o ...",
+        "Pregúntame más tarde, no me apetece trabajar ahora.",
+        "Claro que no.", "Claro que sí.",
+        "No estoy seguro.", "Es muy probable."
+    ]
+
+    DEFINIR respuestas_especificas COMO DICCIONARIO
+        "¿Cómo" → ["Con mucho esfuerzo y dedicación.", "A través de la práctica constante.",
+                   "No es sencillo, pero posible."]
+        "¿Cuando" → ["Cuando el destino lo decida.", "En el momento adecuado.",
+                     "Quizás más pronto de lo que piensas."]
+
+    MIENTRAS VERDADERO HACER
+        ESCRIBIR "Haz una pregunta a la bola 8, si no quiere hacer más preguntas escriba 'salir': "
+        LEER pregunta
+
+        SI pregunta = "salir" ENTONCES
+            ESCRIBIR "Gracias por jugar."
+            TERMINAR BUCLE
+        FIN SI
+
+        PARA CADA clave, respuestas EN respuestas_especificas HACER
+            SI pregunta EMPIEZA CON clave ENTONCES
+                ESCRIBIR RESPUESTA_ALEATORIA(respuestas)
+                CONTINUAR BUCLE PRINCIPAL
+            FIN SI
+        FIN PARA
+
+        ESCRIBIR RESPUESTA_ALEATORIA(respuestas_generales)
+    FIN MIENTRAS
+
+FIN
+
+FUNCIÓN RESPUESTA_ALEATORIA(lista)
+    DEVOLVER ELEMENTO_ALEATORIO(lista)
+FIN FUNCIÓN
